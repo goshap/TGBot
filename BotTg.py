@@ -16,7 +16,7 @@ def main(message):
      bot.send_message(message.chat.id, 'Извини, но пока я не могу тебе помочь 😓')
 
 
-bot.message_handler(commands=['ya'])
+@bot.message_handler(commands=['ya'])
 def site(message):
      bot.send_message(message.chat.id, 'https://ya.ru/')
 
